@@ -1,0 +1,234 @@
+INSERT INTO Universe VALUES('1','DC Universe');
+INSERT INTO Universe VALUES('2','Marvel');
+
+
+
+
+INSERT INTO Location VALUES('1','Gotham City','1');
+INSERT INTO Location VALUES('2','Smallville','1');
+INSERT INTO Location VALUES('3','Metropolis','1');
+INSERT INTO Location VALUES('4','Gateway City','1');
+INSERT INTO Location VALUES('5','Star City','1');
+INSERT INTO Location VALUES('6','Central City','1');
+INSERT INTO Location VALUES('7','National City','1');
+INSERT INTO Location VALUES('8','Coast City','1');
+INSERT INTO Location VALUES('9','Opal City','1');
+INSERT INTO Location VALUES('10','Midway City','1');
+INSERT INTO Location VALUES('11','New York City','2');
+INSERT INTO Location VALUES('12','Asgard','2');
+INSERT INTO Location VALUES('13','Freedom Tower','2');
+INSERT INTO Location VALUES('14','Avengers Tower','2');
+INSERT INTO Location VALUES('15','Stark Tower','2');
+INSERT INTO Location VALUES('16','X-Mansion','2');
+
+
+
+
+INSERT INTO Species VALUES('1','Human','D.C. variant','1');
+INSERT INTO Species VALUES('2','Human','Marvel variant','2');
+INSERT INTO Species VALUES('3','Kryptonians','natives of Krypton','1');
+INSERT INTO Species VALUES('4','Amazonian',null,'1');
+INSERT INTO Species VALUES('5','Martian','Natives of Mars','1');
+INSERT INTO Species VALUES('6','Asgardian','Natives of Asgard','2');
+INSERT INTO Species VALUES('7','God/Eternal',null,'1');
+INSERT INTO Species VALUES('8','Eternal','Natives of Titan','2');
+INSERT INTO Species VALUES('9','Symbiote','symbiotic oozes that require hosts','2');
+INSERT INTO Species VALUES('10','Android','humanoid robots','2');
+INSERT INTO Species VALUES('11','Skrull','Capable of turning invisible','2');
+INSERT INTO Species VALUES('12','Mutant','Humans born with mutated DNA','2');
+
+
+
+
+INSERT INTO Item VALUES('1','Kryptonite','Hurt Kryptonians','1');
+INSERT INTO Item VALUES('2','Venom','Kill people','1');
+INSERT INTO Item VALUES('3','Joker Toxin','Kill people','1');
+INSERT INTO Item VALUES('4','Batarang','Harm People','1');
+INSERT INTO Item VALUES('5','Lasso of Truth','Forces perosn to tell the truth','1');
+INSERT INTO Item VALUES('6','Star Sapphire','brainwash','1');
+INSERT INTO Item VALUES('7','Miracle Machine','creation','1');
+INSERT INTO Item VALUES('8','Book of Destiny','fate','1');
+INSERT INTO Item VALUES('9','Radion','killing gods','1');
+INSERT INTO Item VALUES('10','Rock of Eternity','Houses the Seven Deadly Sins','1');
+INSERT INTO Item VALUES('11','Mjolnir','grants flight, control over lightning, and returns to its wielder','2');
+INSERT INTO Item VALUES('12','Infinity Gauntlet','unlimited power','2');
+INSERT INTO Item VALUES('13','Iron Man Suit','protects and arms user with stark tech','2');
+INSERT INTO Item VALUES('14','Mind Stone','grants psionic abilities and read thoughts','2');
+INSERT INTO Item VALUES('15','The 10 Rings','grants various spiritual powers','2');
+
+
+
+
+INSERT INTO Person VALUES('1','Batman','Bruce Wayne',null,null,'M','32','1','1');
+INSERT INTO Person VALUES('2','Superman','Clark Kent','Heat Vision, Ice Breath, Strength, Speed, Invincibility, Sight','Kryptonite','M','33','1','3');
+INSERT INTO Person VALUES('3','Wonder Woman','Diana Prince','Strength, Speed, Stamina',null,'F','23','1','4');
+INSERT INTO Person VALUES('4','Green Lantern','Hal Jordan','Flight, Construction','Fear','M','30','1','1');
+INSERT INTO Person VALUES('5','Martian Manhunter','Jonn Jonzz','Flight, Telepathy, Superhuman strength, Psychokinesis, Invisibility, Shapeshifting, Eidetic memory','Fire','F',null,'1','5');
+INSERT INTO Person VALUES('6','Flash','Barry Allen','Speed',null,'M',null,'1','1');
+INSERT INTO Person VALUES('7','Joker',null,null,null,'M',null,'1','1');
+INSERT INTO Person VALUES('8','Robin','Dick Grayson',null,null,'M','12','1','1');
+INSERT INTO Person VALUES('9','Robin','Jason Todd',null,null,'M','14','1','1');
+INSERT INTO Person VALUES('10','Robin','Tim Drake',null,null,'M','17','1','1');
+INSERT INTO Person VALUES('11','Robin','Stephanie Brown',null,null,'F','17','1','1');
+INSERT INTO Person VALUES('12','Robin','Damian Wayne',null,null,'M','15','1','1');
+INSERT INTO Person VALUES('13','Nightwing','Dick Grayson',null,null,'M','18','1','1');
+INSERT INTO Person VALUES('14','Red Hood','Jason Todd',null,null,'M','18','1','1');
+INSERT INTO Person VALUES('15','Red Robin','Tim Drake',null,null,'M','18','1','1');
+INSERT INTO Person VALUES('16','Batgirl','Stephanie Brown',null,null,'F','18','1','1');
+INSERT INTO Person VALUES('17','Lex Luthor','Lex Luthor',null,null,'M',null,'1','1');
+INSERT INTO Person VALUES('18','Braniac','Vril Dox I','Intelligence, Energy, Psychic',null,'O',null,'1','7');
+INSERT INTO Person VALUES('19','Ras al Ghul','Ras al Ghul','Immortality, Magic','needs access to lazarus pit','M',null,'1','1');
+INSERT INTO Person VALUES('20','Reverse Flash','Eobard Thawne','Speed, Agility',null,'M',null,'1','1');
+INSERT INTO Person VALUES('21','Doomsday',null,'Strength, Speed, Agility','Kryptonite','O',null,'1','3');
+INSERT INTO Person VALUES('22','Riddler','Edward Nigma','Intelligence',null,'M',null,'1','1');
+INSERT INTO Person VALUES('23','Captain Cold','Leonard Snart','Ice','Heat','M',null,'1','1');
+INSERT INTO Person VALUES('24','Scarecrow','Jonathan Crane','Fear',null,'M',null,'1','1');
+INSERT INTO Person VALUES('25','Mr. Freeze','Victor Fries','Ice','Heat','M',null,'1','1');
+INSERT INTO Person VALUES('26','Bane',null,'Strength',null,'M',null,'1','1');
+INSERT INTO Person VALUES('27','Iron Man','Tony Stark','Intellect, Money','Alcoholism','M','48','2','2');
+INSERT INTO Person VALUES('28','Thor','Thor Odinson','Weather, Strength','Mjolnir','M','1000','2','6');
+INSERT INTO Person VALUES('29','Spider Man','Peter Parker','Web Slinging, Strength, Precognition',null,'M','19','2','2');
+INSERT INTO Person VALUES('30','Captain America','Steve Rogers','Stength, Durability','Healing','M','100','2','2');
+INSERT INTO Person VALUES('31','Captain Marvel','Carol Danvers','Strength, Flight, Energy Blast, Healing, Speed',null,'F','59','2','2');
+INSERT INTO Person VALUES('32','Scarlet Witch','Wanda Maximoff','Magic','Durability','F','29','2','2');
+INSERT INTO Person VALUES('33','Thanos','Thanos','Strength, Durability, Intellect',null,'M','1000','2','8');
+INSERT INTO Person VALUES('34','Doctor Strange','Steven Strange','Magic, Flight','Reliance on magic','M','42','2','2');
+INSERT INTO Person VALUES('35','Wong','Benedict Wong','Magic, Flight','Reliance on magic','M',null,'2','2');
+INSERT INTO Person VALUES('36','Venom',null,'Strength, Shapeshifting, Precognition','Reliance on host','M',null,'2','9');
+INSERT INTO Person VALUES('37','Ultron','Ultron','Immortality, Intellect, Cybernetic','Overconfidence','M','4','2','10');
+INSERT INTO Person VALUES('38','Ant Man','Hank Pym','Size Change, Ant Control','Mental Instability','M',null,'2','2');
+INSERT INTO Person VALUES('39','Mandarin','Gene Khan','Intellect, magic','Reliance on items','M',null,'2','2');
+INSERT INTO Person VALUES('40','Super-Skrull','Klrt','Heat, Strength, Speed, Flight, Durability, Invisibility, Shapeshifting',null,'M',null,'2','11');
+INSERT INTO Person VALUES('41','Hela','Hela Odinson','Strength, Speed, Healing, Teleportation, Flight, Magic',null,'F','1000','2','6');
+INSERT INTO Person VALUES('42','Hulk','Bruce Banner','Strength, Durability','Changes Personality','M','49','2','2');
+INSERT INTO Person VALUES('43','Ant Man','Scott Lang','Size Change, Ant Control',null,'M','49','2','2');
+INSERT INTO Person VALUES('44','Loki','Loki Laufeyson','Illusions, Intelligence, Healing, Magic',null,'M','1000','2','6');
+INSERT INTO Person VALUES('45','Vision','Vision','Strength, Speed, Flight, Invulnerability, Energy Blast','reliance on mind stone','M','4','2','10');
+INSERT INTO Person VALUES('46','Wolverine','Logan','Healing, Strength, Durability, Claws',null,'M','137','2','12');
+INSERT INTO Person VALUES('47','Cyclops','Scott Summers','Lazer Eyes','needs glasses to control lazers','M',null,'2','12');
+
+
+
+
+INSERT INTO Ownership VALUES('1','1');
+INSERT INTO Ownership VALUES('24','2');
+INSERT INTO Ownership VALUES('7','3');
+INSERT INTO Ownership VALUES('1','4');
+INSERT INTO Ownership VALUES('3','5');
+INSERT INTO Ownership VALUES('4','6');
+INSERT INTO Ownership VALUES('2','7');
+INSERT INTO Ownership VALUES('1','9');
+INSERT INTO Ownership VALUES('27','13');
+INSERT INTO Ownership VALUES('28','11');
+INSERT INTO Ownership VALUES('45','14');
+INSERT INTO Ownership VALUES('33','12');
+INSERT INTO Ownership VALUES('42','12');
+INSERT INTO Ownership VALUES('27','12');
+INSERT INTO Ownership VALUES('30','11');
+INSERT INTO Ownership VALUES('42','13');
+INSERT INTO Ownership VALUES('37','14');
+INSERT INTO Ownership VALUES('33','14');
+INSERT INTO Ownership VALUES('42','14');
+INSERT INTO Ownership VALUES('27','14');
+INSERT INTO Ownership VALUES('39','15');
+
+
+INSERT INTO Team VALUES('2','Avengers','Good','2');
+INSERT INTO Team VALUES('3','X-Men','Good','2');
+INSERT INTO Team VALUES('1','Justice League','Good','1');
+
+
+
+
+INSERT INTO Superhero VALUES('1','0',null);
+INSERT INTO Superhero VALUES('2','0',null);
+INSERT INTO Superhero VALUES('3','0',null);
+INSERT INTO Superhero VALUES('4','0',null);
+INSERT INTO Superhero VALUES('5','0',null);
+INSERT INTO Superhero VALUES('6','0',null);
+INSERT INTO Superhero VALUES('7','0',null);
+INSERT INTO Superhero VALUES('8','0','1');
+INSERT INTO Superhero VALUES('9','1','1');
+INSERT INTO Superhero VALUES('10','1','1');
+INSERT INTO Superhero VALUES('11','1','1');
+INSERT INTO Superhero VALUES('12','1','1');
+INSERT INTO Superhero VALUES('13','0',null);
+INSERT INTO Superhero VALUES('16','0',null);
+INSERT INTO Superhero VALUES('27','0',null);
+INSERT INTO Superhero VALUES('28','0',null);
+INSERT INTO Superhero VALUES('29','0',null);
+INSERT INTO Superhero VALUES('30','0',null);
+INSERT INTO Superhero VALUES('31','0',null);
+INSERT INTO Superhero VALUES('32','0',null);
+INSERT INTO Superhero VALUES('34','0',null);
+INSERT INTO Superhero VALUES('35','1','34');
+INSERT INTO Superhero VALUES('38','0',null);
+INSERT INTO Superhero VALUES('42','0',null);
+INSERT INTO Superhero VALUES('43','0',null);
+INSERT INTO Superhero VALUES('45','0',null);
+INSERT INTO Superhero VALUES('46','0',null);
+INSERT INTO Superhero VALUES('47','0',null);
+
+
+
+
+INSERT INTO Villian VALUES('7','Send a message');
+INSERT INTO Villian VALUES('17','Prove Earth doesnt need Superman');
+INSERT INTO Villian VALUES('18','Be the smartest thing in existence');
+INSERT INTO Villian VALUES('19','Be the strongest');
+INSERT INTO Villian VALUES('20','Kill Flash');
+INSERT INTO Villian VALUES('21','Kill Superman');
+INSERT INTO Villian VALUES('22','Steal Stuff');
+INSERT INTO Villian VALUES('23','Steal Stuff');
+INSERT INTO Villian VALUES('24','Kill People');
+INSERT INTO Villian VALUES('25','Bring back his dead daughter');
+INSERT INTO Villian VALUES('26','Kill People');
+INSERT INTO Villian VALUES('33','Anihilate half the population of the Universe');
+INSERT INTO Villian VALUES('36','Kill Spiderman and Breed');
+INSERT INTO Villian VALUES('37','Conquer the World');
+INSERT INTO Villian VALUES('39','Conquer the World');
+INSERT INTO Villian VALUES('40','Conquer other Worlds');
+INSERT INTO Villian VALUES('41','Rule Asgard');
+INSERT INTO Villian VALUES('44','Rule Asgard');
+
+
+
+
+
+INSERT INTO Nemesis VALUES('1','7');
+INSERT INTO Nemesis VALUES('1','19');
+INSERT INTO Nemesis VALUES('1','22');
+INSERT INTO Nemesis VALUES('1','24');
+INSERT INTO Nemesis VALUES('1','25');
+INSERT INTO Nemesis VALUES('1','26');
+INSERT INTO Nemesis VALUES('2','17');
+INSERT INTO Nemesis VALUES('6','20');
+INSERT INTO Nemesis VALUES('6','23');
+INSERT INTO Nemesis VALUES('27','39');
+INSERT INTO Nemesis VALUES('28','44');
+INSERT INTO Nemesis VALUES('28','41');
+INSERT INTO Nemesis VALUES('38','37');
+INSERT INTO Nemesis VALUES('29','36');
+
+
+
+
+
+INSERT INTO Membership VALUES('1','1');
+INSERT INTO Membership VALUES('1','2');
+INSERT INTO Membership VALUES('1','3');
+INSERT INTO Membership VALUES('1','4');
+INSERT INTO Membership VALUES('1','5');
+INSERT INTO Membership VALUES('1','6');
+INSERT INTO Membership VALUES('2','27');
+INSERT INTO Membership VALUES('2','28');
+INSERT INTO Membership VALUES('2','29');
+INSERT INTO Membership VALUES('2','30');
+INSERT INTO Membership VALUES('2','31');
+INSERT INTO Membership VALUES('2','32');
+INSERT INTO Membership VALUES('2','34');
+INSERT INTO Membership VALUES('2','38');
+INSERT INTO Membership VALUES('2','42');
+INSERT INTO Membership VALUES('2','45');
+INSERT INTO Membership VALUES('3','46');
+INSERT INTO Membership VALUES('3','47');
