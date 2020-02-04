@@ -1,0 +1,25 @@
+#Find all superheros that were mentored by Batman
+
+SELECT name, realName
+FROM person p, superhero s
+WHERE s.sPersonID = p.personID && s.mentorID = (SELECT personID FROM person WHERE name = 'Batman');
+
+#Show the names of all nemeses combos
+
+SELECT s.name AS "Superhero", v.name AS "Villain"
+FROM nemesis n
+WHERE n.sPersonID = s.personID AND n.vPersonID = v.personID;
+
+#Show all members of the avengers who are human
+
+Select p.name AS “Superheroes”
+FROM person p, team t, membership m, species s 
+WHERE t.name = "Avengers" AND t.teamID = m.teamID AND m.personID = p.personID AND p.speciesId = s.speciesID             
+AND s.name = "Human";
+
+#Show each universe’s human species information
+
+SELECT u.universeID, u.name AS "universe name", s.name AS "species name", s.description, s.speciesID
+FROM universe u
+LEFT JOIN species s
+ON u.universeID = s.universeID AND s.name = "Human";
