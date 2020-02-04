@@ -1,0 +1,149 @@
+DROP TABLE IF EXISTS Ownership;
+DROP TABLE IF EXISTS Nemesis;
+DROP TABLE IF EXISTS Membership;
+DROP TABLE IF EXISTS Team;
+DROP TABLE IF EXISTS Villian;
+DROP TABLE IF EXISTS Superhero;
+DROP TABLE IF EXISTS Person;
+DROP TABLE IF EXISTS Species;
+DROP TABLE IF EXISTS Item;
+DROP TABLE IF EXISTS Location;
+DROP TABLE IF EXISTS Universe;
+
+
+CREATE TABLE Universe
+(
+	universeID int(5) NOT NULL,
+	name VARCHAR(20) NOT NULL,
+	CONSTRAINT universe_PK
+		PRIMARY KEY (universeID)
+);
+
+CREATE TABLE Location
+(
+	locationID int(5) NOT NULL,
+	name VARCHAR(20) NOT NULL,
+	universeID int(5) NOT NULL,
+	CONSTRAINT location_PK
+		PRIMARY KEY (locationID),
+	CONSTRAINT location_FK
+		FOREIGN KEY (universeID)
+			REFERENCES Universe(universeID)
+);
+
+CREATE TABLE Species
+(
+	speciesID int(5) NOT NULL,
+	name VARCHAR(20) NOT NULL,
+	description VARCHAR(50),
+	universeID int(5) NOT NULL,
+	CONSTRAINT species_PK
+		PRIMARY KEY (speciesID),
+	CONSTRAINT species_FK
+		FOREIGN KEY (universeID)
+			REFERENCES Universe(universeID)
+);
+
+CREATE TABLE Item
+(
+	itemID int(5) NOT NULL,
+	name VARCHAR(20) NOT NULL,
+	purpose VARCHAR(200),
+	universeID int(5) NOT NULL,
+	CONSTRAINT item_PK
+		PRIMARY KEY (itemID),
+	CONSTRAINT item_FK
+		FOREIGN KEY (universeID)
+			REFERENCES Universe(universeID)
+);
+
+CREATE TABLE Person
+(
+	personID int(5) NOT NULL,
+	name VARCHAR(20) NOT NULL,
+	realName VARCHAR(20),
+	superPower VARCHAR(100),
+	weakness VARCHAR(100),
+	gender CHAR,
+	age int(5),
+	universeID int(5) NOT NULL,
+	speciesID int(5) NOT NULL,
+	CONSTRAINT Person_PK
+		PRIMARY KEY (personID),
+	CONSTRAINT Person_FK
+		FOREIGN KEY (universeID)
+			REFERENCES Universe(universeID),
+    		FOREIGN KEY (speciesID)
+			REFERENCES Species(speciesID)
+);
+
+CREATE TABLE Superhero
+(
+	sPersonID int(5) NOT NULL,
+	isSideKick BOOLEAN,
+	mentorID   int(5),
+	CONSTRAINT superhero_PK
+		PRIMARY KEY (sPersonID),
+	CONSTRAINT superhero_FK
+		FOREIGN KEY (sPersonID)
+			REFERENCES Person(personID),
+		FOREIGN KEY (mentorID)
+			REFERENCES Person(personID)
+);
+
+CREATE TABLE Villian
+(
+	vPersonID int(5) NOT NULL,
+	goal VARCHAR(100),
+	CONSTRAINT villian_PK
+		PRIMARY KEY (vPersonID),
+	CONSTRAINT villian_FK
+		FOREIGN KEY (vPersonID)
+			REFERENCES Person(personID)
+);
+
+CREATE TABLE Team
+(
+	teamID int(5) NOT NULL,
+	name VARCHAR(20),
+	alignment VARCHAR(5),
+	universeID int(5) NOT NULL,
+	CONSTRAINT team_PK
+		PRIMARY KEY (teamID),
+	CONSTRAINT team_FK
+		FOREIGN key (universeID)
+			REFERENCES Universe(universeID)
+);
+
+CREATE TABLE Membership
+(
+	teamID int(5) NOT NULL,
+	personID int(5) NOT NULL,
+	CONSTRAINT membership_FK
+		FOREIGN KEY (teamID)
+			REFERENCES Team(teamID),
+    		FOREIGN KEY (personID)
+			REFERENCES Person(personID)
+);
+
+CREATE TABLE Nemesis
+(
+	sPersonID int(5) NOT NULL,
+	vPersonID int(5) NOT NULL,
+	CONSTRAINT nemesis_FK
+		FOREIGN KEY (sPersonID)
+			REFERENCES Superhero(sPersonID),
+    		FOREIGN KEY (vPersonID)
+			REFERENCES Villian(vPersonID)
+);
+
+CREATE TABLE Ownership
+(
+	personID int(5) NOT NULL,
+	itemID int(5) NOT NULL,
+	CONSTRAINT ownership_FK
+		FOREIGN KEY (personID)
+			REFERENCES Person(personID),
+		FOREIGN KEY (itemID)
+			REFERENCES Item(itemID)
+);
